@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html id="bg">
+    <head>
+        <title>Swag</title>
+        <link rel="icon" type="image" href="favi.png">
+        <link rel="stylesheet" href="styles.css"
+    </head>
+    <div class="shit">
+        <h1>Epic Plagierizer</h1>
+    </div>
+    <div class="shit">
+        <div style="display: flex; justify-content: center;">
+            <textarea placeholder="Insert gay shit here" class="ass" id="textarea"></textarea>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <input class="ass" id="fella" style="margin-top: -1.5px; width: 40%;" type="button" value="Generate Plagierism" onclick="generateDogShit()">
+        </div>
+    </div>
+    <div class="shit" id="semen" style="margin-top: 8px;"><div id="sammyisgay"></div></div>
+    <footer>netspend.png
+        <img src="netspend.png" id="netspend">
+        <button onclick="muteDogShit()">Mute ts</button>
+    </footer>
+</html>
+<audio id="sickbeat" autoplay loop>
+    <source src="dickinmymouth.mp3" type="audio/mp3">
+</audio>
+<script>
+function hueShift(elementId, durationMs) {
+    let num = 0;
+    const element = document.getElementById(elementId);
+    const intervalId = setInterval(() => {
+        element.style.filter = `hue-rotate(${num}deg)`;
+        num++;
+        if (num == 0) {
+            clearInterval(intervalId);
+        }
+    }, durationMs);
+}
+
+function fellaShift(elementId, durationMs) {
+    let num = 0;
+    const element = document.getElementById(elementId);
+    const intervalId = setInterval(() => {
+        element.style.backgroundColor = `hsl(180, 100%, 50%)`;
+        num++;
+        if (num == 0) {
+            clearInterval(intervalId);
+        }
+    }, durationMs);
+}
+
+hueShift('bg', 1);
+fellaShift('fella', 1);
+
+let asdf = false;
+
+function muteDogShit() {
+    const beat = document.getElementById("sickbeat");
+    if (beat.volume === 0) {
+        beat.volume = 1;
+    } else {
+        beat.volume = 0;
+    }
+}
+
+function generateDogShit() {
+
+    /*const text = document.getElementById("textarea").value;
+    const div = document.createElement("div");
+    const node = document.createTextNode(`${text}`);
+    div.appendChild(node);
+    const babymommadiv = document.getElementById("semen");
+    babymommadiv.appendChild(div);*/
+
+    document.getElementById("sammyisgay").innerHTML = text;
+}
+</script>

@@ -1,0 +1,30 @@
+h1 {
+
+    text-align: center;
+    font-family: monospace;
+    font-weight: 600;
+}
+html {
+    background-image: url("takis.avif");
+    filter: contrast(150%);
+}
+.shit {
+    backdrop-filter: blur(10px) brightness(80%);
+    border-radius: 2vw;
+    margin-top: -10px
+}
+.ass {
+    margin: 10px ;
+    background-color: transparent;
+    resize: none;
+    width: 95%;
+    border-radius: 2vw;
+}
+@keyframes spin {
+    from {rotate: 0deg;}
+    to {rotate: 360deg;}
+}
+#netspend {
+    width: 20%;
+    animation: spin .6s linear infinite;
+}
