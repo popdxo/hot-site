@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="styles.css"
     </head>
     <div class="shit">
-        <h1>Epic Plagierizer</h1>
+        <h1 id="headtext"></h1>
     </div>
     <div class="shit">
         <div style="display: flex; justify-content: center;">
@@ -24,7 +24,7 @@
     </footer>
 </html>
 <audio id="sickbeat" autoplay loop>
-    <source src="dickinmymouth.mp3" type="audio/mpeg">
+    <source src="dickinmymouth.mp3" type="audio/mp3">
 </audio>
 <script>
 function hueShift(elementId, durationMs) {
@@ -67,8 +67,8 @@ function muteDogShit() {
 
 function generateDogShit() {
 
-    /*const text = document.getElementById("textarea").value;
-    const div = document.createElement("div");
+    const text = document.getElementById("textarea").value;
+    /*const div = document.createElement("div");
     const node = document.createTextNode(`${text}`);
     div.appendChild(node);
     const babymommadiv = document.getElementById("semen");
@@ -76,4 +76,41 @@ function generateDogShit() {
 
     document.getElementById("sammyisgay").innerHTML = text;
 }
+
+let i = 0 ;
+let txt = 'Epic Plagierizer';
+const speed = 50;
+var typed = "";
+let transitionSpeed = 500;
+const splashes = [txt,"The Best Plagierizer","Added Dreamy Bull","Socks off still isn't gay"];
+
+function typeShit() {
+    if (i < txt.length) {
+        typed = txt.charAt(i);
+        document.getElementById("headtext").innerHTML += typed;
+        i++;
+        setTimeout(typeShit, speed)
+    } else {
+        setTimeout(typeEraser, transitionSpeed);
+    }
+}
+
+function typeEraser() {
+    typed = "";
+    if (i > 0) {
+        for (thinger = 0; thinger < (i - 1); thinger++) {
+            typed += txt.charAt(thinger);
+        }
+        document.getElementById("headtext").innerHTML = "​" + typed;
+        i--;
+        setTimeout(typeEraser, speed);
+    } else {
+        let splashselect = Math.floor(Math.random() * splashes.length);
+        txt = splashes[splashselect];
+        setTimeout(typeShit, transitionSpeed);
+    }
+}
+
+typeShit();
+
 </script>
