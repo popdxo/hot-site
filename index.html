@@ -59,6 +59,7 @@ let asdf = false;
 const beat = document.getElementById("sickbeat");
 
 function muteDogShit() {
+    beat.play();
     if (beat.volume === 0) {
         beat.volume = 1;
     } else {
@@ -66,7 +67,11 @@ function muteDogShit() {
     }
 }
 
-beat.play();
+function browsersPissMeOff() {
+    beat.play();
+}
+
+browsersPissMeOff();
 
 function generateDogShit() {
 
